@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <nav class="menu menu-1">
+  <ul>
+    <li><a href="exp_pro.html">experiences</a></li>
+    <li><a href="loisirs.html">loisirs</a></li>
+	<li><a href="formation.html">formations</a></li>
+    <!-- <li><a href="#">Blog</a></li> -->
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+</nav>
+  
+<style>
+
+h2{
+    color: blue;
+    padding: 30px;
+    font-size: 30px;
+
+
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #42a061;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+  <!-- barre nav -->
+  .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  padding: 10px;
+  box-shadow: 0 0 15px 4px;
+  rgba(0,100,10,0.06);
+  border-radius: 20px;
+  color: blue;
+}
+
+.sidenav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	background: seagreen;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+.menu{
+  padding: 80px 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.menu-1, .menu-5{
+  background: #4A148C;
+}
+
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.menu a{
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+  padding: 4px 0;
+}
+.menu a:{before
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.menu a:hover:{before
+  transform: scale3d(1,1,1);
+}
+.menu-1 a:{before
+  background: #E91E63;
+  transform-origin: 100% 50%;
+}
+.menu-1 a:hover{before
+  transform-origin: 0 50%;
+}
+
+	h2 {
+        color:blue;
+
+
+    }
+    h1 {
+        color:green;
+        text-align:center;
+		font-weight: bold;
+
+    }
+	p {
+	font-weight: bold;
+
+
+}
+</style>
+</head>
+<body>
+
+<h2>Formations</h2>
+
+<p>:</p>
+<button type="button" class="collapsible">titre professionnel TSSR(niveau BTS) obtenu par VAE en 2020</button>
+<div class="content">
+  <p>Afin de valoriser mes comp&eacute;tences acquises en autodidacte pour la plupart, j'ai tent&eacute; et obtenu cette VAE pour ce titre niveau V. </p>
+</div>
+
+<button type="button" class="collapsible">titre professionnel TAI(niveau BAC) 2016</button>
+<div class="content">
+  <p>Obtention des trois CCP lors de la formation <b>TAI</b> au <b>CRIP</b>
+ &agrave; Montpelier</p>
+  <p>Obtention des certifications <b>Cisco</b> It Essentials et <b>CCNA</b>
+1&amp;2</p> </p>
+</div>
+
+<button type="button" class="collapsible">Formation WEBDEVELOPPEUR</button>
+<div class="content">
+  <p>En cours de reconversion, je suis cette formation gr&acirc;ce &agrave;	mon CPF dans le but d'obtenir le titre professionnel (niveau V) <br>...</p>
+  <p>J'ai pris des comp&eacute;tences sur cetains langages : <BR><BR> HTML, <BR>CSS, <BR> JAVASCRIPT, <BR> PYTHON, <BR> PHP, <BR> MYSQL... <BR> Et suis en train d'apprendre JQUERY</p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

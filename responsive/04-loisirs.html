@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><!-- K:\page web\hero\ldemazydotcom.html -->
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Exemple de structure d'une page web">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+	<meta name="author" content="Laurent DEMAZY">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="technicien informatique, administrateur r?seaux, windows, linux">
+	<meta name="author" content="Laurent DEMAZY">
+	<meta http-equiv="refresh" content="300"><!-- Referencing external javascript file -->
+	
+    <script src="js/hero.js"></script><title>un peu de sport</title><!--	Menu de navigation   --> 
+	
+    
+	
+
+<nav class="menu menu-1">
+  <ul>
+    <li><a href="exp_pro.html">experiences</a></li>
+    <li><a href="loisirs.html">loisirs</a></li>
+	<li><a href="formation.html">formations</a></li>
+    <!-- <li><a href="#">Blog</a></li> -->
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+</nav>
+<link href="/styles/style.css" rel="stylesheet" />
+
+<style>
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  padding: 10px;
+  box-shadow: 0 0 15px 4px;
+  rgba(0,100,10,0.06);
+  border-radius: 20px;
+  color: blue;
+}
+
+.sidenav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	background: seagreen;	
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+.menu{
+  padding: 80px 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.menu-1, .menu-5{
+  background: #4A148C;
+}
+
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.menu a{
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+  padding: 4px 0;
+}
+.menu a:{before
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.menu a:hover:{before
+  transform: scale3d(1,1,1);
+}
+.menu-1 a:{before
+  background: #E91E63;
+  transform-origin: 100% 50%;
+}
+.menu-1 a:hover{before
+  transform-origin: 0 50%;
+}
+
+	h2 {
+        color:blue;
+		
+
+    }
+    h1 {
+        color:green;
+        text-align:center;
+		font-weight: bold;
+
+    }
+	p {
+	font-weight: bold;
+	
+	
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body> 
+
+    <header class="topbar">
+	<!--
+        <nav>
+            <a href="formations.html" class="active">Formation</a>
+            <a href="exp_pro.html">Exp&#xE9;rience Professionelle</a>
+            <a href="loisirs.html">Loisirs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="social">
+			<a href="https://www.facebook.com/laurent.demazy/">Suivez moi facebook</a>
+            <a href=</a>
+            <a href="#" title="Twitter"><img src="img/twitter.png" title="Twitter"></a>
+    </header>
+	-->
+
+      <br>
+    <br>
+
+    <!--div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>les 100 kms de Millau en 2018</h2>
+					<br>
+					
+                    
+                        <br>
+                </div>
+                </div>
+			<div class="row">
+                <div class="col">
+                    <h2><b>2 Saintélyons</b></h2>
+					<center>
+					<ul>
+					<b>2011</b></p>
+					<b>2012</b></p>
+					</ul>
+					</center>
+                   <br> 
+                </div>
+                </div>
+				<br>
+				
+            <div class="row">
+                <div class="col">
+                    <h2>17 marathons</h2>
+					<center>
+					<ul>
+                    <p>7 fois Lyon, </p> 
+					<p>4 fois Annecy, </p> 
+					<p>1 fois le marathon de Paris, </p>
+					<p>2 fois le marathon de Rennes, </p>
+					<p>1 fois le marathon de Montbrison, </p>
+					<p>1 fois le marathon de Montpelier, </p>
+					<p>1 fois deux semis pour remplacer un marathon annulé, </p>
+					</ul>
+					</center>
+                </div>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Quelques trails</h2>
+					<center>
+					<ul>
+                    <p>Plusieurs participations au STU </p> 
+					<p>plusieurs fois "Courir pour des pommes", </p> 
+					<p>trail du Bessat, </p>
+					<p>...</p>
+					</ul>
+					</center>
+                </div>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <h2>course sur route</h2>
+					<center>
+					<ul>
+                    <p>10 kms, </p> 
+					<p>Semi marathons, </p> 
+					<p>..., </p> 
+					</ul>
+					</center>
+					
+                </div>
+                </div>
+			 <div class="row">
+                <div class="col">
+                    <h2>24 heures de Roche</h2>
+					<center>
+					<ul>
+                    <p>Plusieurs participations par équipes </p> 
+					<p>4 tentatives en individuel(134 kms en <b>2024</b>), </p> 
+					</ul>
+					</center>
+                </div>
+                </div>
+            </div>
+        
+        
+    </div>
+	<div class="container-fluid ">
+	<br>
+	<br>
+	<hr>
+	<footer class="footer">
+  <div-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h2{
+    color: blue;
+    padding: 30px;
+    font-size: 30px;
+
+
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #42a061;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Course à pied</h2>
+
+<p></p>
+<button type="button" class="collapsible">Grandes distances et trails</button>
+<div class="content">
+    <ul>
+        plusieurs participations aux <em>24 heures de Roche</em> par équipes,<br>
+        Plusieurs tentatives en individuel(134 km en 2024), <br>
+        les 100 kms de Millau en 2018, <br>
+        2 Saintélyons, <br>
+        Une fois Le Puy-Firminy(2024),<br>
+        Plusieurs participations au STU, <br>
+        Plusieurs participations à "Courir pour des pommes", <br>
+        ...</p>
+    </ul>
+</div>
+
+<button type="button" class="collapsible">Marathons</button>
+<div class="content">
+  <ul>
+        7 fois le Marathon de Lyon, <br>
+        4 fois le Marathon d'Annecy, <br>
+        2 fois le marathon de Renne,<br>
+        1 fois celui de Paris, <br>Montpelier <br>ou Montbrison, <br>
+        </p>
+    </ul>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><hr>
+
+<footer>
+    <p> linkedin : <a href="http://www.linkedin.com/in/ldemazy/">Voir mon profil</a></p>
+
+
+  </p>
+
+  </div-->
+
+<div class="row">
+<div class="col">
+<h4>T&eacute;l&eacute;chargez mon CV</h4>
+<a href="fichiers/tssr.pdf">Technicien
+Sup&eacute;rieur Syst&egrave;mes et R&eacute;seaux </a><br>
+</div>
+</div>
+    <br><br><br><br><br>
+</footer>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
