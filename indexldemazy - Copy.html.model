@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index/css/ldemazy.css">
+    <title>page_index</title>
+</head>
+<body>
+    <section id="global">
+        <header>
+<h1>Titre du site</h1>
+        </header>
+        <nav>
+
+        </nav>
+        <article>
+            <h2></h2>
+            <p><img src="" alt="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quis ut consectetur deserunt exercitationem quas mollitia pariatur voluptates repellat similique eum, eaque saepe numquam. Voluptas id dolorum veniam veritatis voluptatum!
+        </p>
+        <p><img src="" alt="">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti suscipit excepturi sequi voluptas iste incidunt quisquam placeat quod magni provident voluptatum doloribus, deleniti facere vel saepe aut natus aperiam? Sunt!
+    </p>
+        </article>
+        <footer>
+            <p>&copy; Ldemazy.com</p>
+        </footer>
+    </section>
+    
+</body>
+</html>
